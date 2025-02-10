@@ -1,0 +1,53 @@
+/* Reset all margin, padding, and box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/* Set default font family and size */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
+
+}
+
+/* Remove text decoration from links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Normalize form elements */
+input, button, textarea, select {
+  border: none;
+  outline: none;
+  font: inherit;
+  background: none;
+}
+
+/* Remove list styles */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+    cursor: pointer;
+}

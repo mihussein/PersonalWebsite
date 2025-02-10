@@ -1,0 +1,7 @@
+body {
+    background-color: black;
+    background: url(../img/bg2.jpeg), rgba(0,0,0, 0.6);
+    background-blend-mode: darken;
+    background-repeat: repeat; /* Repeat both horizontally and vertically */
+    background-size: calc(100% / 3) auto;
+}

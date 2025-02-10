@@ -1,0 +1,51 @@
+@use '../all' as *;
+@use 'sass:math';
+
+
+.header {
+    background-color: $c-dark_2;
+    color: $c-white;
+    // border-radius: 100px;
+    margin: 0px auto;
+    width: 100%;
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: $header_height;
+    }
+
+    &_profile {
+        position: relative;
+        $calculated-flex: $header_height + math.div($header_height * 20, 100);
+        flex: 0 0 $calculated-flex;
+        height: $header_height;
+        width: $header_height;
+        padding-right: math.div($header_height * 20, 100);
+
+        img {
+            $profile_margin: 17;
+            $profile_width: math.div($header_height * (100 - 2 * $profile_margin), 100);
+            position: absolute;
+            width: $profile_width;
+            max-width: $header_height - math.div($header_height * 20, 100);
+            height: $profile_width;
+            object-fit: cover;
+            border-radius: 50%;
+            left: math.div($header_height * $profile_margin, 100);
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+
+    &_title {
+        flex: 1 1 20rem;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+    }
+}
+

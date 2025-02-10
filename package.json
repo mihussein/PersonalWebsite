@@ -1,0 +1,24 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "homepage": "https://github.com/mihussein/PersonalWebsite#readme",
+  "bugs": {
+    "url": "https://github.com/mihussein/PersonalWebsite/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihussein/PersonalWebsite.git"
+  },
+  "license": "ISC",
+  "author": "mehussein",
+  "type": "commonjs",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/main.scss:css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.84.0"
+  }
+}

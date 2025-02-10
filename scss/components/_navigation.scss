@@ -1,0 +1,55 @@
+@use '../all' as *;
+@use 'sass:math';
+
+.navigation_bar {
+    position: relative;
+    flex: 0 0 3rem;
+    background-color: transparent;
+    height: 5rem;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 2rem;
+
+    display: flex;
+    justify-content: start; 
+    align-items: center;
+
+    &_icon {
+        position: relative;
+        display: block;
+        background-color: $c-white;
+        height: 2px;
+        width: 2.5rem;
+        border-radius: 100px;
+
+        &::after, &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            background-color: $c-white;
+            height: 2px;
+            width: 2.5rem;
+            border-radius: 100px;
+        }
+
+        &::after {
+            top: 400%;
+            transform: translate(0, 0%);
+        }
+        &::before {
+            top: -400%;
+        }
+    }
+
+    &_list {
+        position: absolute;
+        display: none;
+        background-color: $c-dark_2;
+        left: 5rem;
+        top: 5rem;
+        transition: all .5s;
+        &_item {
+
+        }
+    }
+}
