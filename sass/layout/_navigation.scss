@@ -1,0 +1,81 @@
+.nav {
+    font-family: "Inter", sans-serif;
+    @include respond(tablet-lg-min) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-list {
+        position: relative;
+        display: flex;
+        align-content: start;
+        align-items: center;
+        gap: 2px;
+        background-color: $grey-1;
+        width: fit-content;
+        padding: 1.5rem;
+        border-radius: 100px;
+        align-content: center;
+        list-style: none;
+        isolation: isolate;
+
+        &-item {
+            display: inline-block;
+            color: $white;
+            font-size: clamp(1.9rem, 2.7vmin, 4rem);
+            height: fit-content;
+            width: fit-content;
+            padding: 1rem 0rem;
+            text-align: center;
+            align-content: center;
+            border-radius: 100px;
+            transition: all 0.2s ease-in-out;
+
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+
+            &:has(#about:checked) {
+                background-color: $grey-2;
+            }
+            &:has(#social:checked) {
+                background-color: $grey-2;
+            }
+
+            @media (hover: hover) {
+                &:hover {
+                    background-color: $grey-15;
+                }
+            }
+            &:active {
+                background-color: $grey-17;
+            }
+            // &:has(#archive:checked) {
+            //   background-color: $grey-2;
+            // }
+        }
+    }
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    color: $white-2;
+    transition: color 0.2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none; /* For Safari */
+    -ms-user-select: none; /* For older versions of IE */
+}
+
+.split {
+    display: inline-block;
+    height: 10px;
+    width: 2px;
+    background-color: $grey-3;
+    margin-right: 8px;
+}

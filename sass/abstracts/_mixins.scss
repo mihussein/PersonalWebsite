@@ -1,0 +1,155 @@
+@mixin respond($breakpoint) {
+    // Very small devices
+    @if $breakpoint == xxs {
+        @media (max-width: 12.5em) {
+            // 200px
+            @content;
+        }
+    }
+    @if $breakpoint == xs {
+        @media (max-width: 15.625em) {
+            // 250px
+            @content;
+        }
+    }
+    @if $breakpoint == sm-xs {
+        @media (max-width: 18.75em) {
+            // 300px
+            @content;
+        }
+    }
+    @if $breakpoint == sm {
+        @media (max-width: 23.4375em) {
+            // 375px
+            @content;
+        }
+    }
+    @if $breakpoint == sm-md {
+        @media (max-width: 30em) {
+            // 480px
+            @content;
+        }
+    }
+    @if $breakpoint == md-sm {
+        @media (max-width: 37.5em) {
+            // 600px
+            @content;
+        }
+    }
+    @if $breakpoint == md-md {
+      @media (max-width: 40.5em) {
+        // 645px
+        @content;
+      }
+    }
+    @if $breakpoint == md {
+        @media (max-width: 47.999em) {
+            // 768px
+            @content;
+        }
+    }
+    @if $breakpoint == md-min {
+      @media (min-width: 48em) {
+        // 768px min
+        @content;
+      }
+    }
+
+    // Tablets
+    @if $breakpoint == tablet-sm {
+        @media (max-width: 56.25em) {
+            // 900px
+            @content;
+        }
+    }
+    @if $breakpoint == tablet-md {
+        @media (max-width: 64em) {
+            // 1024px
+            @content;
+        }
+    }
+    @if $breakpoint == tablet-md-min {
+      @media (min-width: 64em) {
+        // 1024px min
+        @content;
+      }
+    }
+    @if $breakpoint == tablet-lg {
+        @media (max-width: 75em) {
+            // 1200px
+            @content;
+        }
+    }
+    @if $breakpoint == tablet-lg-min {
+      @media (min-width: 75em) {
+        // 1200px min
+        @content;
+      }
+    }
+
+    // Laptops and desktops
+    @if $breakpoint == laptop-sm {
+        @media (max-width: 80em) {
+            // 1280px
+            @content;
+        }
+    }
+    @if $breakpoint == laptop-md {
+        @media (max-width: 90em) {
+            // 1440px
+            @content;
+        }
+    }
+
+    @if $breakpoint == laptop-lg {
+      @media (max-width: 112.5em) {
+        // 1600
+        @content;
+      }
+    }
+    // Large desktops and 4K+
+    @if $breakpoint == desktop-lg {
+        @media (min-width: 100em) {
+            // 1600px
+            @content;
+        }
+    }
+    @if $breakpoint == desktop-xl {
+        @media (min-width: 112.5em) {
+            // 1800px
+            @content;
+        }
+    }
+    @if $breakpoint == hd-lg {
+        @media (min-width: 125em) {
+            // 2000px
+            @content;
+        }
+    }
+    @if $breakpoint == hd-xl {
+        @media (min-width: 160em) {
+            // 2560px
+            @content;
+        }
+    }
+    @if $breakpoint == ultra-hd {
+        @media (min-width: 187.5em) {
+            // 3000px
+            @content;
+        }
+    }
+
+    // 4K and higher resolutions
+    @if $breakpoint == four-k {
+        @media (min-width: 240em) {
+            // 3840px
+            @content;
+        }
+    }
+    @if $breakpoint == five-k {
+        @media (min-width: 300em) {
+            // 4800px
+            @content;
+        }
+    }
+}

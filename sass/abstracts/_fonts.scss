@@ -1,0 +1,17 @@
+@mixin font-face($name, $file-path, $weight: 400, $style: normal) {
+  @font-face {
+    font-family: '#{$name}';
+    src: url('#{$file-path}.ttf') format('truetype'); // Specify .ttf format
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+
+@include font-face('Inter', '../../fonts/inter/Inter-VariableFont_opsz,wght', 400, normal);
+@include font-face('Inter Italic', '../../fonts/inter/Inter-Italic-VariableFont_opsz,wght', 400, italic);
+
+
+
+
+

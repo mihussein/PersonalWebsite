@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $black;
+    height: 10rem;
+    width: fit-content;
+    padding: 3rem 4rem 0 6rem;
+    clear: left;
+
+    @include respond(md-md) {
+        padding: 0rem 0rem 0 3rem;
+        height: 8rem;
+    }
+}
+
+.header-img {
+    flex: 0 0 auto;
+    height: clamp(4rem, 7vmin, 7rem);
+    @include respond(md-md) {
+        height: 4rem;
+    }
+}
+
+.profile-pic {
+    height: clamp(4rem, 7vmin, 7rem);
+    border-radius: 50%;
+    float: left;
+    @include respond(md-md) {
+        height: 4rem;
+    }
+}
+
+.header-title {
+    flex: 5 0 auto;
+    font-size: clamp(2.4rem, 3.5vmin, 5.2rem);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    text-align: left;
+    color: $white;
+    padding: 3rem;
+}

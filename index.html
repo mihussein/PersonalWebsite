@@ -1,39 +1,124 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&family=Quicksand:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="fonts/awesome/css/all.css" />
+        <link rel="icon" type="image/png" href="img/headpic.png" />
         <title>Hussein</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Hussein">
-        <meta name="keywords" content="Hussein">
-        <meta name="author" content="Hussein">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="fontawesomeWeb/css/all.css"
     </head>
-
     <body>
-        <div class="top-bar">
-            <div class="theme-toggle">
-                <i class="fad fa-sun"></i>
-            </div>
-            <div class="menu-icon-container">
-                <div class="menu-icon"></div>
-            </div>
-        </div>
         <header class="header">
-            <div class="profile">
-                <div class="profile-image-container">
-                    <img src="img/profile.jpg" alt="Profile Image" class="profile-image">
-                </div>
-                <div class="profile-name-container">
-                    <h1 class="profile-name">Hussein Nasab</h1>
-                </div>
+            <div class="header-img">
+                <img class="profile-pic" src="img/profile.jpg" alt="Profile" />
             </div>
+            <h2 class="header-title">Hussein Nasab</h2>
         </header>
+
+        <div class="main">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <input type="radio" name="item" id="about" checked />
+                        <label for="about">About</label>
+                    </li>
+                    <li class="split"></li>
+                    <li class="nav-list-item">
+                        <input type="radio" name="item" id="social" />
+                        <label for="social">Social</label>
+                    </li>
+                </ul>
+            </nav>
+
+            <article class="article">
+                <div class="line"></div>
+                <div class="article-about">
+                    <p>Hey there, <strong>Hussein</strong> here.</p>
+                    <br />
+                    <p>
+                        A developer with a passion for Linux, Rust, and C++.
+                        Currently working in web development and writing
+                        JavaScript and C++.
+                    </p>
+                    <p>I love Linux, and I plan to dive into Rust soon.</p>
+                    <br />
+                    <p>
+                        Catch the latest updates on
+                        <a
+                            href="https://github.com/mihussein"
+                            target="_blank"
+                            style="text-decoration: none; color: #aaf"
+                            >GitHub</a
+                        >
+                        and other socials — links in the "Social" tab.
+                    </p>
+                    <br />
+                    <p><strong>I use Arch btw,</strong></p>
+                </div>
+
+                <div class="article-social">
+                    <h3 class="article-social-header">
+                        Find me from the links below.
+                    </h3>
+                    <ul class="article-social-list">
+                        <li class="article-social-list-item">
+                            <a href="https://t.me/h2stuff"
+                                ><i class="fa-brands fa-telegram"></i
+                                >Telegram</a
+                            >
+                        </li>
+                        <li class="article-social-list-item">
+                            <a href="https://x.com/mehusseinio"
+                                ><i class="fa-brands fa-twitter"></i>Twitter</a
+                            >
+                        </li>
+                        <li class="article-social-list-item">
+                            <a href="https://linkedin.com/in/mehusseinio"
+                                ><i class="fa-brands fa-linkedin"></i
+                                >LinkedIn</a
+                            >
+                        </li>
+                        <li class="article-social-list-item">
+                            <a href="#"
+                                ><i class="fa-brands fa-reddit"></i>Reddit</a
+                            >
+                        </li>
+                        <li class="article-social-list-item">
+                            <a href="https://instagram.com/herrhusen"
+                                ><i class="fa-brands fa-instagram"></i
+                                >Instagram</a
+                            >
+                        </li>
+                        <li class="article-social-list-item">
+                            <a href="https://github.com/mihussein"
+                                ><i class="fa-brands fa-github"></i>GitHub</a
+                            >
+                        </li>
+                        <li class="article-social-list-item">
+                            <a href="https://matrix.to/#/@benvec:matrix.org"
+                                ><i class="fa-solid fa-link"></i>Matrix</a
+                            >
+                        </li>
+                        <li class="article-social-list-item">
+                            <a
+                                href="#"
+                                id="copyLink"
+                                session-id="055d84d232405e332cc84641fc4b81365fe286420c489da47249d9e37c02387c20"
+                                ><i class="fa-solid fa-link"></i>Session</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+
+        <script src="script/main.js"></script>
     </body>
-
-
-    <script src="js/index.js"></script>
 </html>
